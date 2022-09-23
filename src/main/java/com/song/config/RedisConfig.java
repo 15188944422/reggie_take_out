@@ -10,10 +10,10 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 @Configuration
 public class RedisConfig extends CachingConfigurerSupport {
-    @Bean
+    /*@Bean
     public JedisConnectionFactory redisConnectionFactory() {
         return new JedisConnectionFactory();
-    }
+    }*/
 
     @Bean
     public RedisTemplate<Object,Object> redisTemplate(RedisConnectionFactory redisConnectionFactory){
